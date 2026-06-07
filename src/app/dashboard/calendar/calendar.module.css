@@ -1,0 +1,213 @@
+.container {
+  padding-top: 1rem;
+  max-width: 1000px;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background: #F4EAE1;
+  border: none;
+  border-radius: 16px;
+  padding: 2.5rem;
+  min-height: 400px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+/* Customizing React Calendar */
+.customCalendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: var(--font-body) !important;
+  background: transparent !important;
+}
+
+.customCalendar :global(.react-calendar__navigation) {
+  margin-bottom: 2rem;
+}
+
+.customCalendar :global(.react-calendar__navigation button) {
+  min-width: 44px;
+  background: none;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-primary);
+}
+
+.customCalendar :global(.react-calendar__navigation button:enabled:hover),
+.customCalendar :global(.react-calendar__navigation button:enabled:focus) {
+  background-color: rgba(75, 46, 43, 0.05);
+}
+
+.customCalendar :global(.react-calendar__month-view__weekdays) {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  text-decoration: none;
+  border: none;
+  margin-bottom: 1rem;
+}
+
+.customCalendar :global(.react-calendar__month-view__weekdays__weekday abbr) {
+  text-decoration: none;
+}
+
+.customCalendar :global(.react-calendar__tile) {
+  padding: 0.75em 0.5em;
+  font-size: 1rem;
+  color: var(--color-text);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.customCalendar :global(.react-calendar__tile--now) {
+  background: transparent;
+  font-weight: 600;
+}
+
+.customCalendar :global(.react-calendar__tile--active),
+.customCalendar :global(.react-calendar__tile--active:enabled:hover),
+.customCalendar :global(.react-calendar__tile--active:enabled:focus) {
+  background: var(--color-primary) !important;
+  color: white !important;
+}
+
+.customCalendar :global(.react-calendar__tile:enabled:hover),
+.customCalendar :global(.react-calendar__tile:enabled:focus) {
+  background-color: rgba(75, 46, 43, 0.1);
+}
+
+.callDot {
+  height: 6px;
+  width: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+/* Call items list */
+.callsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.callItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.callItem:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.callInfo {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.iconBox {
+  width: 48px;
+  height: 48px;
+  background: #F4EAE1;
+  color: var(--color-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.callContentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.clientName {
+  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  margin-bottom: 0.25rem;
+}
+
+.clientId {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.viewProfileBtn {
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+
+.viewProfileBtn:hover {
+  text-decoration: underline;
+}
+
+.upcomingBadge {
+  background: #C08552;
+  color: white;
+  padding: 0.35rem 1rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.emptyState {
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 4rem 0;
+  font-style: italic;
+}

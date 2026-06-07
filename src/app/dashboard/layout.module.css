@@ -1,0 +1,17 @@
+.dashboardLayout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+}
+
+.mainWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  padding: 0 3rem 3rem 3rem;
+  flex: 1;
+  overflow-y: auto;
+}
