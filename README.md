@@ -1,11 +1,8 @@
 # TDC Matchmaker MVP
 
 ## Deliverables
-- **Live Hosted Link:** [ ]
-- **GitHub Repo:** [ ]
-- **Sample Login Credentials:**
-  - Username: `admin`
-  - Password: `admin`
+- **Live Hosted Link:**  https://tdc-match-making.vercel.app
+- **GitHub Repo:**  git@github.com:vinishdas/TDC_MatchMaking.git
 
 ---
 
