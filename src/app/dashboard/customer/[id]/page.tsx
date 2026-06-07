@@ -230,9 +230,6 @@ export default function CustomerDetail() {
           <button className={styles.outlineBtn} onClick={() => setShowCalendar(true)}>
             <CalendarIcon size={16} /> Schedule Call
           </button>
-          <button className={styles.solidBtnDark}>
-            <ShieldCheck size={16} /> Request Verification
-          </button>
         </div>
       </div>
 
